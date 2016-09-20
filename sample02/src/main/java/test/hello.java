@@ -11,6 +11,7 @@ public class hello {
 		  System.out.println("함지호바보.");
 		}
 		int c;
+		String abc;
 	  int age = 30;
 	  if (age < 20) {
 	    System.out.println("성년입니다.");
