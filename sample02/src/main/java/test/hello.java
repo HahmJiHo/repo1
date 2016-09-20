@@ -3,20 +3,18 @@ package test;
 public class hello {
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
 	  int age = 30;
+	  int b;
 	  if (age < 20) {
 	    System.out.println("성년입니다.");
 	  } else {
 	    System.out.println("???");
 	  }
-=======
 		
 		for (int i = 0; i < 9; i++) {
 			System.out.printf("%d 뀨?",i);
 		}
 
->>>>>>> branch 'master' of https://github.com/HahmJiHo/repo1.git
 	}
 
 }
