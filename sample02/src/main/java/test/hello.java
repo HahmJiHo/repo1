@@ -7,7 +7,7 @@ public class hello {
 <<<<<<< HEAD
 		int age = 20;
 		if ( age < 20) {
-		  System.out.println("함지호바보");
+		  System.out.println("함지호바보.");
 		}
 		
 =======
