@@ -3,8 +3,15 @@ package test;
 public class hello {
 
 	public static void main(String[] args) {
-	  int age = 30;
 	  int b;
+	  int c;
+	  int a;
+		int age = 20;
+		if ( age < 20) {
+		  System.out.println("함지호바보");
+		}
+		
+
 	  if (age < 20) {
 	    System.out.println("성년입니다.");
 	  } else {
