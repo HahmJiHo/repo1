@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test01</title>
+
+<style>
+/* 대상의 열거 및 관계
+A B {}      : A를 조상으로 갖는 모든 B 태그
+A > B {}    : A를 부모로 갖는 모든 B 태그
+A, B, C {}  : A와 B,C태그에 대해 스타일 적용
+*/
+
+div li { border-bottom: 2px solid blue; }
+div > * { border: 10px solid black; }
+h1, ul > li { border: 5px solid green; }
+</style>
+
+
+</head>
+<body>
+	<h1 id="test1">CSS 주요 문법</h1>
+	<ul>
+		<li>셀렉터 : 스타일 적용 대상</li>
+		<li>상자와 테두리</li>
+		<li>폰트</li>
+		<li>색상</li>
+		<li>위치</li>
+	</ul>
+
+	<div>
+		<ol>
+			<li>셀렉터 : 스타일 적용 대상</li>
+			<li>상자와 테두리</li>
+			<li>폰트</li>
+			<li>색상</li>
+			<li>위치
+			   <ul>
+			     <li>항목1</li>
+			     <li>항목2</li>
+			     <li>항목3</li>
+			   </ul>
+			 </li>
+		</ol>
+	</div>
+
+
+</body>
+</html>

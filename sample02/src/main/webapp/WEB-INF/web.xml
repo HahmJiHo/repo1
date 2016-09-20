@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  
+>
+  <listener>
+    <listener-class>listener.Listener01</listener-class>
+  </listener> 
+  <!-- 서블릿 클래스 정보 등록 -->
+  <servlet>
+    <servlet-name>servlet01</servlet-name>
+    <servlet-class>servlet.Servlet01</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servlet02</servlet-name>
+    <servlet-class>servlet.Servlet02</servlet-class>
+    <!-- 서블릿이 사용할 데이터를 여기에 기술 -->
+    <init-param>
+      <param-name>driver</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>jdbcUrl</param-name>
+      <param-value>jdbc:mysql://localhost:3306/java85db</param-value>
+    </init-param>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>java85</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>1111</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>servlet03</servlet-name>
+    <servlet-class>servlet.Servlet03</servlet-class>
+    <!-- 서블릿이 사용할 데이터를 여기에 기술 -->
+    <init-param>
+      <param-name>driver</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>jdbcUrl</param-name>
+      <param-value>jdbc:mysql://localhost:3306/java85db</param-value>
+    </init-param>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>java85</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>1111</param-value>
+    </init-param>
+    <!-- <load-on-startup>1</load-on-startup>-->
+  </servlet>
+  
+  
+  <!-- 서블릿에 URL을 부여 -->
+  <servlet-mapping>
+    <servlet-name>servlet01</servlet-name>
+    <url-pattern>/Servlet01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servlet02</servlet-name>
+    <url-pattern>/Servlet02</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servlet03</servlet-name>
+    <url-pattern>/Servlet03</url-pattern>
+  </servlet-mapping>  
+</web-app>
+
